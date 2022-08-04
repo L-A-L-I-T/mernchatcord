@@ -1,0 +1,52 @@
+.container{
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding : 20px;
+}
+
+.msgs{
+  overflow-y: scroll;
+  height : calc(100vh - 160px);
+}
+
+
+.noChat{
+  height : calc(100vh - 70px);
+  display : flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.bottomContainer{
+  padding-right : 90px;
+  position : relative;
+}
+.input{
+  width : 100%;
+  height : 30px;
+  border-radius : 5px;
+  border: 1px solid #839AA8;
+  padding : 5px 10px;
+  font-size : 15px;
+}
+
+.sendIcon{
+  position : absolute !important;
+  right : 0px;
+  bottom : 0px;
+  float : right;
+  background : #D3EBCD !important;
+  padding : 0px;
+  border-radius : 5px;
+  height : 100%;
+  
+}
+
+.icon{
+  width : 30px;
+  height : 30px;
+  color : #635666;
+}

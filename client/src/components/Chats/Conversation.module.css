@@ -1,0 +1,19 @@
+.container{
+  border-radius : 5px;
+  margin : 10px;
+  background-color : #D3EBCD;
+  padding : 10px;
+  cursor : pointer;
+  display : flex;
+  justify-content : start;
+  align-items : center;
+}
+
+.name{
+  font-size : 15px;
+  margin-left : 10px;
+}
+
+.msg{
+  font-size : 10px;
+}

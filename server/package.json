@@ -1,0 +1,38 @@
+{
+  "name": "chat-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm insall --prefix client && npm run build --prefix client"
+
+  },
+  "keywords": [
+    "mern",
+    "chat-app"
+  ],
+  "engines": {
+    "node": "14.x"
+  },
+  "author": "Lalit Rajput",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.0",
+    "colors": "^1.4.0",
+    "cookie-session": "^2.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^9.0.2",
+    "express": "^4.17.1",
+    "express-async-handler": "^1.1.4",
+    "generate-password": "^1.7.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.13.14",
+    "nodemon": "^2.0.7",
+    "passport": "^0.5.3",
+    "passport-google-oauth20": "^2.0.0",
+    "socket.io": "^4.1.2",
+    "unique-username-generator": "^1.1.1"
+  }
+}

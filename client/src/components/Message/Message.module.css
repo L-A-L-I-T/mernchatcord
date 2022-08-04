@@ -1,0 +1,34 @@
+.container{
+  width : 40%;
+  border-radius : 5px;
+  margin : 10px;
+  background-color : #D3EBCD;
+  padding : 10px;
+}
+
+
+.topContainer{
+  display : flex;
+  justify-content : space-between;
+  align-items : start;
+}
+
+.innerContainer{
+  display : flex;
+  justify-content : center;
+  align-items : center;
+}
+
+.avatar{
+  margin-right : 10px;
+}
+
+.msg{
+  margin-top : 10px;
+}
+
+
+.ownMessage{
+  display : flex;
+  justify-content : flex-end;
+}

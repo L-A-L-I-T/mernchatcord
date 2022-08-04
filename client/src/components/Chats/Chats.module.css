@@ -1,0 +1,17 @@
+.container{
+  width : 450px;
+  background-color : #839AA8;
+  height : calc(100vh - 70px);
+}
+
+
+.topContainer{
+  display : flex;
+  justify-content: space-between;
+  align-items: center;
+  padding : 10px;
+}
+
+.dialog{
+  width : 400px;
+}
