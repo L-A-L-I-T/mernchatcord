@@ -11,9 +11,6 @@
     "mern",
     "chat-app"
   ],
-  "engines": {
-    "node": "6.14.x"
-  },
   "author": "Lalit Rajput",
   "license": "ISC",
   "dependencies": {
