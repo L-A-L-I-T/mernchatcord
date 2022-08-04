@@ -14,7 +14,7 @@ import axios from "axios";
 import Conversation from "./Conversation";
 import AddIcon from "@mui/icons-material/Add";
 import styles from "./Chats.module.css";
-const ENDPOINT = "https://mern-chatcord.herokuapp.com/";
+const ENDPOINT = "https://mern-chatcord.herokuapp.com";
 
 function Chats(props) {
 	const [open, setOpen] = useState(false);
