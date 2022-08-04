@@ -2,7 +2,7 @@ const express = require("express");
 
 const passport = require("passport");
 
-const CLIENT_URL = "http://localhost:3000/chat";
+const CLIENT_URL = "https://mern-chatcord.herokuapp.com/chat";
 
 const router = express.Router();
 const Conversation = require("../models/ConversationModel");
@@ -59,7 +59,7 @@ router.get(
 	"/google/callback",
 	passport.authenticate("google", {
 		successRedirect: CLIENT_URL,
-		failureRedirect: "http://localhost:3000",
+		failureRedirect: "https://mern-chatcord.herokuapp.com/",
 		passReqToCallback: true,
 	})
 	// (req, res) => {

@@ -34,7 +34,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(
 	cors({
-		origin: "http://localhost:3000",
+		origin: "https://mern-chatcord.herokuapp.com/",
 		methods: "GET,POST,PUT,DELETE",
 		credentials: true,
 	})
@@ -77,7 +77,7 @@ const server = app.listen(
 const io = require("socket.io")(server, {
 	pingTimeout: 60000,
 	cors: {
-		origin: "http://localhost:3000",
+		origin: "https://mern-chatcord.herokuapp.com/",
 		// credentials: true,
 	},
 });

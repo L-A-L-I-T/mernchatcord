@@ -12,7 +12,8 @@ passport.use(
 		{
 			clientID: GOOGLE_CLIENT_ID,
 			clientSecret: GOOGLE_CLIENT_SECRET,
-			callbackURL: "/api/user/google/callback",
+			callbackURL:
+				"https://mern-chatcord.herokuapp.com/api/user/google/callback",
 			passReqToCallback: true,
 		},
 		async (req, accessToken, refreshToken, profile, cb) => {
