@@ -5,32 +5,28 @@ import { Avatar } from "@mui/material";
 function Conversation(props) {
 	const [user, setUser] = useState(null);
 	const ENDPOINT = "https://mern-chatcord.herokuapp.com";
+	const friendId = props.chat.members.find((m) => m !== props.currentUser._id);
+	const data = {
+		userId: friendId,
+	};
+	const getUser = async () => {
+		try {
+			const res = await axios(`${ENDPOINT}/api/user?userId=` + friendId, data);
+			console.log(res.data);
+			setUser(res.data);
+			props.setFriend(res.data);
+		} catch (err) {
+			console.log(err);
+		}
+	};
 	useEffect(() => {
-		const friendId = props.chat.members.find(
-			(m) => m !== props.currentUser._id
-		);
-		const data = {
-			userId: friendId,
-		};
-		const getUser = async () => {
-			try {
-				const res = await axios(
-					`${ENDPOINT}/api/user?userId=` + friendId,
-					data
-				);
-				console.log(res.data);
-				setUser(res.data);
-				props.setFriend(res.data);
-			} catch (err) {
-				console.log(err);
-			}
-		};
 		getUser();
 	}, [props.currentUser, props.conversation]);
 	return (
 		<div
 			className={styles.container}
-			onClick={() => {
+			onClick={async () => {
+				await getUser();
 				props.setCurrentChat(props.chat);
 			}}
 		>

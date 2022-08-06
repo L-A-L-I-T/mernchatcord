@@ -1,6 +1,6 @@
 import React from "react";
 import { Paper, Button } from "@mui/material";
-import ChatImg from "../../assets/ChatImg.png";
+import ChatImg from "../../assets/ChatAppLogo.png";
 import GoogleIcon from "../../assets/googleIcon.png";
 import styles from "./Home.module.css";
 
@@ -15,8 +15,11 @@ function Home() {
 		<div className={styles.container}>
 			<div>
 				<Paper className={styles.paper}>
-					<img src={ChatImg} alt="chat" className={styles.chatImg} />
-					<div>Hello User</div>
+					<div>
+						<img src={ChatImg} alt="chat" className={styles.chatImg} />
+						<div className={styles.logoName}>Chatcord</div>
+					</div>
+
 					<Button variant="outlined" onClick={handleLoginWithGoogle}>
 						Login / Signup with{" "}
 						<img src={GoogleIcon} alt="google" className={styles.googleIcon} />

@@ -2,7 +2,7 @@ const express = require("express");
 
 const passport = require("passport");
 
-const CLIENT_URL = "https://mern-chatcord.herokuapp.com/chat";
+const CLIENT_URL = "https://mern-chatcord.herokuapp.com";
 
 const router = express.Router();
 const Conversation = require("../models/ConversationModel");
@@ -48,23 +48,18 @@ router.get("/login/success", (req, res) => {
 		});
 	}
 });
-router.get(
-	"/google",
-	passport.authenticate("google", { scope: ["profile"] })
-	// (req, res) => {
-	// 	res.json({ user });
-	// }
-);
+router.get("/logout", (req, res) => {
+	req.logout();
+	res.redirect(CLIENT_URL);
+});
+router.get("/google", passport.authenticate("google", { scope: ["profile"] }));
 router.get(
 	"/google/callback",
 	passport.authenticate("google", {
-		successRedirect: CLIENT_URL,
-		failureRedirect: "https://mern-chatcord.herokuapp.com/",
+		successRedirect: `${CLIENT_URL}/chat`,
+		failureRedirect: CLIENT_URL,
 		passReqToCallback: true,
 	})
-	// (req, res) => {
-	// 	res.json({ user });
-	// }
 );
 
 //Add a friend

@@ -3,12 +3,19 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background : #839AA8;
 }
 
 
 .chatImg{
-  width : 100px;
+  width : 200px;
+  margin-bottom : 10px;
+}
 
+.logoName{
+  font-weight: 600;
+  font-size : 25px;
+  color : #839AA8;
 }
 
 .googleIcon{
@@ -25,4 +32,5 @@
   align-items: center;
   flex-direction: column;
   padding : 20px;
+  background : #635666;
 }

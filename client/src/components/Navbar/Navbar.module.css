@@ -22,3 +22,10 @@
 .avatar{
   margin-right : 10px;
 }
+
+.logoutBtn{
+  margin-left : 10px;
+}
+.logoutBtn:hover{
+  background-color : #AEDBCE;
+}

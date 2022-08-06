@@ -37,15 +37,17 @@ function Chats(props) {
 			}).then((response) => {
 				handleClose();
 				if (response.status === 200) {
-					<Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
-						<Alert
-							onClose={handleClose}
-							severity="success"
-							sx={{ width: "100%" }}
-						>
-							Friend Added Successfully
-						</Alert>
-					</Snackbar>;
+					return (
+						<Snackbar open={true} autoHideDuration={6000} onClose={handleClose}>
+							<Alert
+								onClose={handleClose}
+								severity="success"
+								sx={{ width: "100%" }}
+							>
+								Friend Added Successfully
+							</Alert>
+						</Snackbar>
+					);
 				}
 				props.setRefresh(!props.refresh);
 			});
@@ -55,9 +57,9 @@ function Chats(props) {
 		<>
 			<div className={styles.container}>
 				<div className={styles.topContainer}>
-					<div style={{ fontSize: "20px" }}>My Chats</div>
+					<div style={{ fontSize: "16px" }}>My Chats</div>
 					<Button onClick={handleOpen}>
-						<AddIcon />
+						<AddIcon style={{ color: "black" }} />
 					</Button>
 				</div>
 				{props.conversations?.map((chat, key) => {
@@ -94,10 +96,6 @@ function Chats(props) {
 							setFriendUsername(e.target.value);
 						}}
 					/>
-
-					{/* {props.users.map((u, key) => {
-						return u.username !== props.user.username && <div>{u.username}</div>;
-					})} */}
 				</DialogContent>
 				<DialogActions>
 					<Button onClick={handleClose}>Cancel</Button>
