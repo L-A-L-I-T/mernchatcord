@@ -2,7 +2,8 @@ const express = require("express");
 
 const passport = require("passport");
 
-const CLIENT_URL = "https://mern-chatcord.herokuapp.com";
+// const CLIENT_URL = "https://mern-chatcord.herokuapp.com";
+const CLIENT_URL = "http://localhost:3000";
 
 const router = express.Router();
 const Conversation = require("../models/ConversationModel");

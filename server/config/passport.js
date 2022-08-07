@@ -7,13 +7,15 @@ const { uniqueUsernameGenerator } = require("unique-username-generator");
 const GOOGLE_CLIENT_ID = process.env.GOOGLE_CLIENT_ID;
 const GOOGLE_CLIENT_SECRET = process.env.GOOGLE_CLIENT_SECRET;
 
+const APPURL = "https://mern-chatcord.herokuapp.com";
+// const APPURL = "http://localhost:8000";
+
 passport.use(
 	new GoogleStrategy(
 		{
 			clientID: GOOGLE_CLIENT_ID,
 			clientSecret: GOOGLE_CLIENT_SECRET,
-			callbackURL:
-				"https://mern-chatcord.herokuapp.com/api/user/google/callback",
+			callbackURL: `${APPURL}/api/user/google/callback`,
 			passReqToCallback: true,
 		},
 		async (req, accessToken, refreshToken, profile, cb) => {

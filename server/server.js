@@ -15,6 +15,8 @@ dotenv.config();
 // passport config
 require("./config/passport");
 connectDB();
+// const ORIGINURL = "http://localhost:3000";
+const ORIGINURL = "https://mern-chatcord.herokuapp.com/";
 const app = express();
 app.use(
 	cookieSession({
@@ -34,7 +36,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(
 	cors({
-		origin: "https://mern-chatcord.herokuapp.com/",
+		origin: ORIGINURL,
 		methods: "GET,POST,PUT,DELETE",
 		credentials: true,
 	})
@@ -77,7 +79,7 @@ const server = app.listen(
 const io = require("socket.io")(server, {
 	pingTimeout: 60000,
 	cors: {
-		origin: "https://mern-chatcord.herokuapp.com/",
+		origin: ORIGINURL,
 		// credentials: true,
 	},
 });

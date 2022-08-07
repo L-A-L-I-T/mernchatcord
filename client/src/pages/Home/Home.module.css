@@ -14,13 +14,21 @@
 
 .logoName{
   font-weight: 600;
-  font-size : 25px;
-  color : #839AA8;
+  font-size : 30px;
+}
+
+.logoIcon{
+  width : 70px;
+  height : 70px;
 }
 
 .googleIcon{
-  width : 30px;
+  width : 25px;
   margin-left : 10px;
+}
+
+.loginwithGoogleBtn{
+  font-size : 18px;
 }
 
 .paper{
@@ -34,3 +42,4 @@
   padding : 20px;
   background : #635666;
 }
+

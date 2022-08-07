@@ -5,6 +5,7 @@ import GoogleIcon from "../../assets/googleIcon.png";
 import styles from "./Home.module.css";
 
 const ENDPOINT = "https://mern-chatcord.herokuapp.com";
+// const ENDPOINT = "http://localhost:8000";
 
 const handleLoginWithGoogle = () => {
 	window.open(`${ENDPOINT}/api/user/google`, "_self");
@@ -20,7 +21,11 @@ function Home() {
 						<div className={styles.logoName}>Chatcord</div>
 					</div>
 
-					<Button variant="outlined" onClick={handleLoginWithGoogle}>
+					<Button
+						variant="outlined"
+						onClick={handleLoginWithGoogle}
+						className={styles.loginwithGoogleBtn}
+					>
 						Login / Signup with{" "}
 						<img src={GoogleIcon} alt="google" className={styles.googleIcon} />
 					</Button>

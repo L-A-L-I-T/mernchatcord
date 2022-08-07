@@ -13,6 +13,16 @@
   font-weight : 500;
 }
 
+.logoImg{
+  width : 50px;
+  height : 50px;
+}
+.logoName{
+  font-size : 25px;
+  margin-left : 20px;
+  font-weight : 600;
+}
+
 .rightContainer{
   display : flex;
   justify-content: center;
@@ -24,7 +34,8 @@
 }
 
 .logoutBtn{
-  margin-left : 10px;
+  margin-left : 20px;
+  color : #635666;
 }
 .logoutBtn:hover{
   background-color : #AEDBCE;
