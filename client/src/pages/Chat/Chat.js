@@ -126,7 +126,7 @@ const Chat = () => {
 				});
 		};
 		getUser();
-		getConversations();
+		// getConversations();
 	}, []);
 
 	useEffect(() => {
