@@ -22,7 +22,8 @@ import styles from "./Home.module.css";
 const Login = () => {
 	const theme = useTheme();
 	const matchDownSM = useMediaQuery(theme.breakpoints.down("md"));
-	const ENDPOINT = "http://localhost:8000";
+	// const ENDPOINT = "http://localhost:8000";
+	const ENDPOINT = "https://mern-chatcord.herokuapp.com";
 
 	const handleLoginWithGoogle = () => {
 		window.open(`${ENDPOINT}/api/user/google`, "_self");
