@@ -84,6 +84,16 @@ const Chat = () => {
 
 	const ENDPOINT = "https://mern-chatcord.herokuapp.com";
 	// const ENDPOINT = "http://localhost:8000";
+	const getConversations = async () => {
+		try {
+			const res = await axios.get(`${ENDPOINT}/api/conversation/` + user?._id);
+			console.log(res.data);
+			setConversations(res.data);
+		} catch (err) {
+			console.log(err);
+		}
+	};
+
 	useEffect(() => {
 		const getUser = () => {
 			console.log("hello");
@@ -160,15 +170,6 @@ const Chat = () => {
 		try {
 			const res = await axios.post(`${ENDPOINT}/api/message`, message);
 			setMessages([...messages, res.data]);
-		} catch (err) {
-			console.log(err);
-		}
-	};
-	const getConversations = async () => {
-		try {
-			const res = await axios.get(`${ENDPOINT}/api/conversation/` + user?._id);
-			console.log(res.data);
-			setConversations(res.data);
 		} catch (err) {
 			console.log(err);
 		}
