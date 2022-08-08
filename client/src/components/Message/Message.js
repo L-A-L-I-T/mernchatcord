@@ -14,9 +14,9 @@ function Message(props) {
 				<div className={styles.topContainer}>
 					<div className={styles.innerContainer}>
 						<Avatar src={props.user?.avatar} className={styles.avatar} />
-						<div>{props.user?.username}</div>
+						<div className={styles.userName}>{props.user?.username}</div>
 					</div>
-					<div>{format(props.message.createdAt)}</div>
+					<div className={styles.time}>{format(props.message.createdAt)}</div>
 				</div>
 				<div className={styles.msg}>{props.message.text}</div>
 			</div>
