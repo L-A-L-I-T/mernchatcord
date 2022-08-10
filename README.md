@@ -38,6 +38,8 @@ Mobile Demo
 ![](./demo/logout.png)
 
 **Mobile View**
+
+
 <img src="https://github.com/L-A-L-I-T/mernchatcord/blob/main/demo/MobileViewLogin.png" width="250" height="400" />
 <img src="https://github.com/L-A-L-I-T/mernchatcord/blob/main/demo/MobileView.png" width="250" height="400" />
 <img src="https://github.com/L-A-L-I-T/mernchatcord/blob/main/demo/MobileViewChat.png" width="250" height="400" />
