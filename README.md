@@ -38,11 +38,11 @@ Mobile Demo
 ![](./demo/logout.png)
 
 **Mobile View**
-![](./demo/MobileViewLogin.png)
-![](./demo/MobileView.png)
-![](./demo/MobileViewChat.png)
-![](./demo/MobileViewAddFriend.png)
-![](./demo/MobileViewLogout.png)
+![](./demo/MobileViewLogin.png | width=250)
+![](./demo/MobileView.png | width=250)
+![](./demo/MobileViewChat.png | width=250)
+![](./demo/MobileViewAddFriend.png | width=250)
+![](./demo/MobileViewLogout.png | width=250)
 
 
 
