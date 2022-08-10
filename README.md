@@ -40,11 +40,11 @@ Mobile Demo
 **Mobile View**
 
 <div style="display : flex" >
-<img src="https://github.com/L-A-L-I-T/mernchatcord/blob/main/demo/MobileViewLogin.png" width="300" height="500" />
-<img src="https://github.com/L-A-L-I-T/mernchatcord/blob/main/demo/MobileView.png" width="300" height="500" />
-<img src="https://github.com/L-A-L-I-T/mernchatcord/blob/main/demo/MobileViewChat.png" width="300" height="500" />
-<img src="https://github.com/L-A-L-I-T/mernchatcord/blob/main/demo/MobileViewAddFriend.png" width="300" height="500" />
-<img src="https://github.com/L-A-L-I-T/mernchatcord/blob/main/demo/MobileViewLogout.png" width="300" height="500" />
+<img src="https://github.com/L-A-L-I-T/mernchatcord/blob/main/demo/MobileViewLogin.png" width="300" />
+<img src="https://github.com/L-A-L-I-T/mernchatcord/blob/main/demo/MobileView.png" width="300" />
+<img src="https://github.com/L-A-L-I-T/mernchatcord/blob/main/demo/MobileViewChat.png" width="300" />
+<img src="https://github.com/L-A-L-I-T/mernchatcord/blob/main/demo/MobileViewAddFriend.png" width="300" />
+<img src="https://github.com/L-A-L-I-T/mernchatcord/blob/main/demo/MobileViewLogout.png" width="300" />
 </div>
 
 ## Instructions
