@@ -39,13 +39,13 @@ Mobile Demo
 
 **Mobile View**
 
-
+<div style="display : flex" >
 <img src="https://github.com/L-A-L-I-T/mernchatcord/blob/main/demo/MobileViewLogin.png" width="250" height="400" />
 <img src="https://github.com/L-A-L-I-T/mernchatcord/blob/main/demo/MobileView.png" width="250" height="400" />
 <img src="https://github.com/L-A-L-I-T/mernchatcord/blob/main/demo/MobileViewChat.png" width="250" height="400" />
 <img src="https://github.com/L-A-L-I-T/mernchatcord/blob/main/demo/MobileViewAddFriend.png" width="250" height="400" />
 <img src="https://github.com/L-A-L-I-T/mernchatcord/blob/main/demo/MobileViewLogout.png" width="250" height="400" />
-
+</div>
 
 ## Instructions
 
