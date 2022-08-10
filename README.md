@@ -38,7 +38,7 @@ Mobile Demo
 ![](./demo/logout.png)
 
 **Mobile View**
-![](./demo/MobileViewLogin.png | width=250)
+<img src="https://github.com/L-A-L-I-T/mernchatcord/blob/main/demo/MobileViewLogin.png" width="200" height="400" />
 ![](./demo/MobileView.png | width=250)
 ![](./demo/MobileViewChat.png | width=250)
 ![](./demo/MobileViewAddFriend.png | width=250)
